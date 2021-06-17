@@ -72,6 +72,7 @@ We can checkout the remote branch and start tracking it with a local branch that
 
 It's also possible to download a ZIP file for a given branch,  using the branch dropdown on this page on the top left, and then selecting the Clone or Download / Download as ZIP button.
 
+https://github.com/angular-university/rxjs-course
 # Other Courses
 
 # Angular PWA Course

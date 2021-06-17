@@ -11,9 +11,9 @@ import { courseRecord } from '../common/util';
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  beginnerCourse : Course[];
-  advanceCourse: Course[];
-
+  beginnerCourse$: Observable<Course[]>;
+  advanceCourse$ : Observable<Course[]>;
+  courses$ : Observable<Course[]>;
     constructor() {
 
     }
@@ -21,24 +21,17 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
 
 
-      const courses$ = courseRecord('api/courses');
-      const http$ = courses$
-                      .pipe(
+      const http$ = courseRecord('api/courses');
+      this.courses$= http$.pipe(
                         map( rec =>  Object.values(rec["payload"]) )
                       );
 
+       this.beginnerCourse$ = this.courses$
+                            .pipe(
+                                map(cc => cc.filter(course => course.category == 'BEGINNER'))
+                            );
 
-      http$.subscribe(
-        courses =>  {
-          this.beginnerCourse = courses.filter( course =>  course.category === 'BEGINNER');
-          this.advanceCourse = courses.filter( course => {
-             return course.category === 'ADVANCED'
-
-          } );
-        },
-        noop(),
-        () => console.log('completed')
-        )
+      this.advanceCourse$ = this.courses$.pipe( map (courses => courses.filter(course => course.category === 'ADVANCED') ) );
     }
 
 }
