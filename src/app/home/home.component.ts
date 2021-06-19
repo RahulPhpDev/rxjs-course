@@ -23,7 +23,8 @@ export class HomeComponent implements OnInit {
 
       const http$ = courseRecord('api/courses');
       this.courses$= http$.pipe(
-                        map( rec =>  Object.values(rec["payload"]) )
+                        map( rec =>  Object.values(rec["payload"]) ),
+                        shareReplay()
                       );
 
        this.beginnerCourse$ = this.courses$

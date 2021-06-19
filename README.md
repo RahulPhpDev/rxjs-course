@@ -73,71 +73,14 @@ We can checkout the remote branch and start tracking it with a local branch that
 It's also possible to download a ZIP file for a given branch,  using the branch dropdown on this page on the top left, and then selecting the Clone or Download / Download as ZIP button.
 
 https://github.com/angular-university/rxjs-course
-# Other Courses
-
-# Angular PWA Course
-
-If you are looking for the [Angular PWA Course](https://angular-university.io/course/angular-pwa-course), the repo with the full code can be found here:
-
-![Angular PWA Course - Build the future of the Web Today](https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-pwa-course.png)
-
-# Angular Security Masterclass
-
-If you are looking for the [Angular Security Masterclass](https://angular-university.io/course/angular-security-course), the repo with the full code can be found here:
-
-[Angular Security Masterclass](https://github.com/angular-university/angular-security-course).
-
-![Angular Security Masterclass](https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png)
-
-# Angular Advanced Library Laboratory Course
-
-If you are looking for the Angular Advanced Course, the repo with the full code can be found here:
-
-[Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-university.io/course/angular-advanced-course).
-
-![Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png)
 
 
-## RxJs and Reactive Patterns Angular Architecture Course
+ShareReplay
 
-If you are looking for the RxJs and Reactive Patterns Angular Architecture Course code, the repo with the full code can be found here:
+This operator use for stop mutliple subscription, The current problem is the times we subscribe
+observable it recall the site-effect
 
-[RxJs and Reactive Patterns Angular Architecture Course](https://angular-university.io/course/reactive-angular-architecture-course)
+so we have this shareReplay operator which share the content to all the subscribier
+without many more content
 
-![RxJs and Reactive Patterns Angular Architecture Course](https://s3-us-west-1.amazonaws.com/angular-academy/blog/images/rxjs-reactive-patterns-small.png)
-
-
-
-## Angular Ngrx Reactive Extensions Architecture Course
-
-If you are looking for the Angular Ngrx Reactive Extensions Architecture Course code, the repo with the full code can be found here:
-
-[Angular Ngrx Reactive Extensions Architecture Course](https://angular-university.io/course/angular2-ngrx)
-
-[Github repo for this course](https://github.com/angular-university/ngrx-course)
-
-![Angular Ngrx Course](https://angular-academy.s3.amazonaws.com/thumbnails/ngrx-angular.png)
-
-
-
-## Angular 2 and Firebase - Build a Web Application Course
-
-If you are looking for the Angular 2 and Firebase - Build a Web Application Course code, the repo with the full code can be found here:
-
-[Angular 2 and Firebase - Build a Web Application](https://angular-university.io/course/build-an-application-with-angular2)
-
-[Github repo for this course](https://github.com/angular-university/angular-firebase-app)
-
-![Angular firebase course](https://angular-academy.s3.amazonaws.com/thumbnails/angular_app-firebase-small.jpg)
-
-
-## Complete Typescript 2 Course - Build A REST API
-
-If you are looking for the Complete Typescript 2 Course - Build a REST API, the repo with the full code can be found here:
-
-[https://angular-university.io/course/typescript-2-tutorial](https://github.com/angular-university/complete-typescript-course)
-
-[Github repo for this course](https://github.com/angular-university/complete-typescript-course)
-
-![Complete Typescript Course](https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png)
-
+https://www.learnrxjs.io/learn-rxjs/operators/multicasting/sharereplay
